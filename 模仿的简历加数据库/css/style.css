@@ -1,0 +1,537 @@
+body,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    background: #EFEFEF;  
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,tr,td,tt,dt,dd,dl,span{
+    cursor: default;
+}
+.fl {
+    float: left;
+}
+.bigContainer {
+    max-width: 930px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-color: white;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.15em;
+    fill: white;
+    overflow: hidden;
+ }
+ .clearfix:after, .clearfix:before {
+    content:'';
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+
+.bannerContainer {
+    margin-bottom: 40px;
+  
+   
+}
+#banner-scroll {
+   
+    width: 100%;
+    padding: 10px 15px;
+    transition: padding 0.3s;
+    position: relative;
+    z-index: 3;
+ 
+}
+
+
+
+.background {
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 515px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.background:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 51, 64, 0.8);
+}
+
+.nav {
+    padding: 0;
+  
+}
+
+.banner{
+    /* padding: 10px 15px; */
+}
+.nav-list {
+
+    height: 60px;
+}
+.nav-list>ul {
+    float: left;
+    list-style: none;
+    margin-top: 19px;
+    margin-left: 270px;
+}
+.nav-list>ul>li {
+    float: left;
+    /* position: relative; */
+    line-height: 26px;
+   padding-left: 31px;
+   padding-bottom: 6px;
+}
+
+
+.fl {
+    float: left;
+}
+.nav-list>ul>li>a {
+    text-decoration: none;
+    height: 26px;
+    color: #BEC1C4;
+    font: 700 13px "Open Sans";
+    /* padding-bottom: 9px; */
+    line-height: 26px;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-list>ul>li .move-line:hover::after {
+    content: '';
+    position: absolute;
+    border: solid 1px #E8676B;
+    border-radius: 1px;
+    top: 100%;
+    left: 0;
+    animation: LtoR 0.2s linear 0s 1 forwards;
+    margin-top: 3px;
+
+}
+@keyframes LtoR {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 94%;
+    }
+}
+.nav-list .about:after {
+    content: '';
+    position: absolute;
+    border: solid 1px #E8676B;
+    border-radius: 1px;
+    top: 100%;
+    left: 0;
+    margin-top: 3px;
+    width: 100%;
+}
+
+
+
+.rs {
+    font:400 26px "Arial Black";
+    font-weight: 400;
+    float: left;
+    color: #E8676B;
+    
+}
+.logo {
+    float: left;
+    width: auto;
+    padding-top: 15px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.logo>a {
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
+}
+.logo>a span {
+    cursor: pointer;
+}
+.card {
+    font:400 26px "Arial Black";
+    float: left;
+    color: #9A9DA2;
+     cursor: pointer;
+}
+.card-outer {
+    padding: 57px 50px 15px 50px; 
+}
+.card-inner {
+    max-width: 830px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.photo {
+    /* padding: 50px 15px 35px 15px; */
+    float: left;
+}
+.photo img {
+   width: 296px;
+   height: 343px;
+}
+.text {
+    float: left;
+    width: 470px;
+    margin-left: 64px;
+}
+.hello {
+    float: left;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+.text .hello .word {
+    background-color: #e8676b;
+    color: #fff;
+    font: 700 14px "Open Sans";
+    padding: 7px 12px;
+    line-height: 1.1;   
+    cursor: default;
+}
+.text .hello .triangle {
+    border: solid 0;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-left-color: #e8676b;
+    border-bottom-color: transparent;
+    margin-left: 5px;  
+}
+.introduce {
+    float: left;
+}
+.introduce h1 {
+    margin: 0;
+    line-height: 36px;
+}
+.introduce h2 {
+   margin: 0;
+   line-height: 18px;
+}
+.im {
+    font: 36px "Open Sans" ;
+    color: #6E737D;
+}
+.cr {
+    font: 700 36px "Open Sans" ;
+    color: #3D4451;    
+}
+.job {
+    font: 400 18px "Open Sans" ;
+    color: #4C525E;
+}
+.introduce hr {
+    color: #DEDEDE;
+    size: 1px;
+    width: 472px;
+    opacity: 0.3;
+    margin: 26px 0;
+}
+.list {
+    float: left;
+}
+.list dl {
+    float: left;
+    width: 480px;
+}
+.list dt {
+    float: left;
+    margin: 0;
+    width: 24%;
+    color: #333333;
+    font: 700 12px "Open Sans";
+    line-height: 20px;
+    margin-bottom: 13px;
+  
+}
+.list dd {
+ 
+}
+.list .vacation {
+    background-color: #e8676b;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+.list dd {
+    float: left;
+    margin: 0;
+    width: 70%;
+    font: 400 15px "Open Sans";
+    color: #9da0a7;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+.card-container {
+    margin-top: 80px;
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+}
+.link-bar {
+    font-size: 15px;
+    float: left;
+    background-color: #E8676B;
+    width: 100%;
+    text-align: center;
+    padding: 21px 0;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+.link-bar>ul {
+    list-style: none;
+    margin-left: 213px; 
+    float: left; 
+}
+.link-bar>ul>li {
+    float: left;
+    margin: 0 21px;
+}
+.link-bar>ul a{
+    text-decoration: none;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.link-bar>ul a svg {
+    width: 20px;
+    height: 20px;
+    padding: 10px;   
+}
+.link-bar>ul>li a:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    transition: 0.5s;
+}
+   
+/* 。。。。。。。。。。。。。。开始正文了。。。。。。。。。。。。。。。。。。。。。。。。。 */
+.downloadResume {
+    margin-top: 30px;
+  
+   
+} 
+.downloadResume p{
+    text-align: center;
+}
+
+
+.downloadResume .button {
+    width: 930px;
+    margin: 0 auto;
+    text-align: center;
+}
+.downloadResume .button a {
+    border: 1px solid #000;
+    font: 700 15px "Open Sans";
+    margin: 5px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #3d4451;
+    line-height: 58px;
+    cursor: pointer;
+    border-color: rgb(203, 205, 207);
+    border-radius: 3px;
+    display: block;
+    width: 280px;
+    height: 58px;
+    margin: 0 auto;
+    
+}
+.downloadResume .button a:hover {
+    box-shadow: 0px 11px 12px -1px rgba(97,83,97,0.87);
+    transition: 1s;
+}
+
+.downloadResume .word {
+    font: 20px "Open Sans";
+    font-style : normal;
+    position: relative;
+    color: #7A7A7A;
+    text-align: center;
+
+}
+
+/* ................................技能条.................................... */
+
+.professional-skills{
+    float: left;
+    text-align: center;
+}
+.professional-skills h2{
+    font: 600 34px "Open Sans";
+    line-height: 1.2;
+    color: #3D4451;
+    margin-bottom: 25px;
+    margin-top: 0;
+    
+}
+
+.skill-chart {
+    float: left;
+    padding: 40px 50px 50px 50px;
+    background-color: #fff;
+}
+
+
+.skill-unit .skill-bar {
+    width: 395px;
+    height: 0px;
+    border: solid 2.5px #FAE0E0;
+    position: relative;
+    border-radius: 2.5px;
+    margin-bottom: 40px;
+}
+.skill-unit .skill-bar:after {
+    content: "";
+    position: absolute;
+    width: 315px;
+    height: 0;
+    border: solid 2.5px #E8676B;
+    border-radius: 2.5px;
+    left: -2.5px;
+    top: -2.5px;
+}
+.skill-unit .bar-title {
+    font: 400 14px "Open Sans";
+    margin-bottom: 5px;
+}
+.skill-unit {
+    float: left;
+    margin-right: 15px;
+}
+.skill-unit:nth-of-type(even){
+    margin-right: 0;
+    margin-left: 15px;
+}
+.skill-bar.bar2:after {
+    width: 351px;
+}
+.skill-bar.bar3:after {
+    width: 315px;
+}
+.skill-bar.bar4:after {
+    width: 391px;
+}
+.skill-bar.bar5:after {
+    width: 239px;
+}
+.skill-bar.bar6:after {
+    width: 383px;
+}
+
+
+
+/* service部分。。。。。。。。。。。。。。。。。。。。 */
+.service-model {
+    width: 256px;
+    display: inline-block;
+}
+.service-model h3 {
+    color: #3d4451;
+    font-size: 20px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin: 0 0 25px 0;
+}
+.service-model h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-family: "Open Sans";
+    margin: 0 0 25px 0;
+    color: #e8676b;
+}
+.service-model hr {
+    width: 100%;
+    height: 5px;
+    max-width: 130px;
+    display: inline-block;
+    background-color: #d8dadc;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.service-model p {
+    font: 400 16px "Open Sans";
+    color: rgb(61, 68, 81);
+    margin-bottom: 25px;
+    line-height: 24px;
+    
+}
+.service-model .icon {
+    width: 40px;
+    height:40px;
+    vertical-align: -0.15em;
+    fill: #E8676B;
+    overflow: hidden;
+    display: block;
+    /* margin-bottom: 20px; */
+
+}
+
+
+
+
+
+
+
+/* 。。。。。。。。。。。。。。。。。。。。。。。。。测试用的。。。。。。。。。。。。。。。。。。。 */
+
+/* .test {
+    border: 1px solid #000;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    /* /* padding-top: 20px;
+    padding-left: 20px; */
+    /* margin-top: 40px;
+    margin-left: 40px; 
+    margin: 0 auto; 
+}
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* float: left; 
+    position: absolute;
+    left:100px;
+    top: 0;
+    z-index: 1;
+} 

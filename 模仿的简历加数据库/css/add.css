@@ -1,0 +1,58 @@
+.sticky {
+background: white;
+position: fixed !important;
+top: 0; 
+left: 0;
+z-index: 5 !important;
+padding: 0 15px !important; 
+box-shadow: 0px 10px 51px 0px rgba(84,74,84,1);
+
+}
+
+
+
+
+
+.submenu {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: white;
+    padding: 10px 0;
+    top: 33px;
+    right: 0%;
+    z-index: 10;
+    border: 1px solid rgba(141, 137, 137, 0.1);
+    box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.75); 
+    animation: changeposition 0.2s linear reverse backwards ;
+}
+@keyframes changeposition {
+    0% {
+
+    }
+    100% {
+        right: 50%;
+        background: rgba(121, 108, 108, 0.3);
+    }
+
+}
+.sub-menu.active {
+    display: block; 
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    font: 400 14px 'Open Sans';
+    color: rgb(61,68,81);
+    line-height: 14px;
+    padding: 10px 30px;
+    display: block;
+    white-space: nowrap;
+}
+.sub-menu li a:hover {
+    color: rgb(232, 103, 107);
+    background: rgb(250, 250, 250);
+}
